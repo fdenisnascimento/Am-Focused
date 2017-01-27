@@ -15,8 +15,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     
     @IBOutlet weak var window: NSWindow!
-    
-    
     @IBOutlet weak var boxView: NSBox!
     
     
@@ -31,6 +29,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var minutesDefault = 25*60
     var counterDefault = 25*60
     var counter = 0
+    var stringTime = String()
+    
     
     
     @IBOutlet weak var labelClock: NSTextField!
@@ -115,7 +115,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         counter += 1
         let (h,m,s) = secondsToHoursMinutesSeconds(seconds: counterDefault-counter)
-        labelClock.stringValue = "0\(h):\(m):\(s)"
+        stringTime = "0\(h):\(m):\(s)"
+        labelClock.stringValue = stringTime
         
     }
     

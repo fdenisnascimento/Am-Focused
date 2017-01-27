@@ -11,9 +11,11 @@ import Cocoa
 class MainViewController: NSViewController {
     
     let appDelegate:AppDelegate = (NSApplication.shared().delegate as? AppDelegate)!
+    var timer = Timer()
     
     @IBOutlet weak var btnStart: NSButton!
     @IBOutlet weak var btnStop: NSButton!
+    @IBOutlet weak var labelTime: NSTextField!
     
     
     override func viewDidAppear() {
@@ -23,6 +25,7 @@ class MainViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        timer  = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
     }
     
     func setupView() -> Void {
@@ -32,6 +35,7 @@ class MainViewController: NSViewController {
         }else {
             btnStart.title = "Start"
         }
+        startClock()
     }
     
     @IBAction func close(_ sender: NSButton) {
@@ -49,6 +53,22 @@ class MainViewController: NSViewController {
     
     @IBAction func btnStop(_ sender: Any) {
         appDelegate.stopTime()
+    }
+    
+    func startClock() -> Void {
+        
+        /*
+        if timer.isValid {
+            timer.invalidate()
+        } else {
+            
+        }
+ */
+        
+    }
+    
+    func updateCounter() -> Void {
+        labelTime.stringValue = appDelegate.stringTime
     }
     
 }
