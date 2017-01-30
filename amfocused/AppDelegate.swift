@@ -102,7 +102,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             window.setIsVisible(true)
             setupView(green: false)
         }
-        playSound()
+       // playSound()
         
     }
     
@@ -132,7 +132,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.setIsVisible(false)
         setupView(green: true)
         labelClock.stringValue = "00:00:00"
-        playSound()
+        //playSound()
     }
     
     func setupView(green: Bool) -> Void {
