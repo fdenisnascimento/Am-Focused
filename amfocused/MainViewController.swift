@@ -19,6 +19,7 @@ class MainViewController: NSViewController {
     @IBOutlet weak var labelTime: NSTextField!
     
     
+    
     override func viewDidAppear() {
         super.viewDidAppear()
         setupView()
