@@ -12,6 +12,7 @@ class MainViewController: NSViewController {
     
     let appDelegate:AppDelegate = (NSApplication.shared().delegate as? AppDelegate)!
     var timer = Timer()
+    let popover = NSPopover()
     
     @IBOutlet weak var btnStart: NSButton!
     @IBOutlet weak var btnStop: NSButton!
@@ -25,6 +26,7 @@ class MainViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.layer?.backgroundColor = NSColor.white.cgColor
         timer  = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
     }
     
@@ -35,7 +37,7 @@ class MainViewController: NSViewController {
         }else {
             btnStart.title = "Start"
         }
-        startClock()
+
     }
     
     @IBAction func close(_ sender: NSButton) {
@@ -55,20 +57,22 @@ class MainViewController: NSViewController {
         appDelegate.stopTime()
     }
     
-    func startClock() -> Void {
-        
-        /*
-        if timer.isValid {
-            timer.invalidate()
-        } else {
-            
-        }
- */
-        
-    }
+    
     
     func updateCounter() -> Void {
         labelTime.stringValue = appDelegate.stringTime
     }
     
+    @IBAction func goToSettings(_ sender: AnyObject) {
+        
+        appDelegate.closePopover(sender: sender)
+        if let vc:SettingsViewController = SettingsViewController(nibName: "SettingsViewController", bundle:nil) {
+            self.presentViewControllerAsModalWindow(vc)
+        }
+        
+    }
+    
+    
 }
+
+

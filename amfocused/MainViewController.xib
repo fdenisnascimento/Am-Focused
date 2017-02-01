@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainViewController" customModule="amfocused" customModuleProvider="target">
@@ -32,7 +31,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="59R-gR-aIW">
-                    <rect key="frame" x="244" y="13" width="64" height="32"/>
+                    <rect key="frame" x="163" y="67" width="64" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="push" title="quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2b4-Qx-NgN">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -64,17 +63,38 @@
                         <action selector="btnStop:" target="-2" id="nHc-nZ-ZfK"/>
                     </connections>
                 </button>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY6-Iv-BGa">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BY6-Iv-BGa">
                     <rect key="frame" x="22" y="214" width="265" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="00:00:00" id="1yv-cg-AET">
                         <font key="font" size="40" name="HelveticaNeue"/>
-                        <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" red="0.0" green="0.71372549019607845" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="Uht-ZC-L1Z">
+                    <rect key="frame" x="269" y="20" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="NgQ-Ob-zHe"/>
+                        <constraint firstAttribute="height" constant="30" id="uAc-6C-5yT"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="icon_config" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="EQg-nt-Pki">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="goToSettings:" target="-2" id="acs-Ok-E7e"/>
+                    </connections>
+                </button>
             </subviews>
-            <point key="canvasLocation" x="-42.5" y="125.5"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Uht-ZC-L1Z" secondAttribute="bottom" constant="20" id="0IX-Az-I07"/>
+                <constraint firstAttribute="trailing" secondItem="Uht-ZC-L1Z" secondAttribute="trailing" constant="10" id="uwW-yB-yHk"/>
+            </constraints>
+            <point key="canvasLocation" x="125" y="105"/>
         </customView>
     </objects>
+    <resources>
+        <image name="icon_config" width="30" height="30"/>
+    </resources>
 </document>
