@@ -1,756 +1,1794 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		100ED6FA52691493C2DA674E /* Pods_amfocused.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD982052FE1418B12703725E /* Pods_amfocused.framework */; };
-		90E7944576870409D620E6F1 /* Pods_amfocusedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197ED77BBDCD7A6684F86E82 /* Pods_amfocusedTests.framework */; };
-		92899F771E3FA61000E15E8D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92899F751E3FA61000E15E8D /* SettingsViewController.swift */; };
-		92899F781E3FA61000E15E8D /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92899F761E3FA61000E15E8D /* SettingsViewController.xib */; };
-		929DEECC1E39184C00F8FA49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DEECB1E39184C00F8FA49 /* AppDelegate.swift */; };
-		929DEECE1E39184C00F8FA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929DEECD1E39184C00F8FA49 /* Assets.xcassets */; };
-		929DEED11E39184C00F8FA49 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929DEECF1E39184C00F8FA49 /* MainMenu.xib */; };
-		929DEEDC1E39184C00F8FA49 /* amfocusedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DEEDB1E39184C00F8FA49 /* amfocusedTests.swift */; };
-		929DEEE71E39184C00F8FA49 /* amfocusedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DEEE61E39184C00F8FA49 /* amfocusedUITests.swift */; };
-		929DEEF61E391AB300F8FA49 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DEEF41E391AB300F8FA49 /* MainViewController.swift */; };
-		929DEEF71E391AB300F8FA49 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929DEEF51E391AB300F8FA49 /* MainViewController.xib */; };
-		929DEEFC1E3A6DBF00F8FA49 /* Alarm clock.wav in Resources */ = {isa = PBXBuildFile; fileRef = 929DEEF91E3A6DBF00F8FA49 /* Alarm clock.wav */; };
-		929DEEFD1E3A6DBF00F8FA49 /* Bottles.wav in Resources */ = {isa = PBXBuildFile; fileRef = 929DEEFA1E3A6DBF00F8FA49 /* Bottles.wav */; };
-		929DEEFE1E3A6DBF00F8FA49 /* clock-ticking-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 929DEEFB1E3A6DBF00F8FA49 /* clock-ticking-2.wav */; };
-		F6565C0E89BF8CB244D7CA73 /* Pods_amfocusedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AFEE80135A74081E587029 /* Pods_amfocusedUITests.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		929DEED81E39184C00F8FA49 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 929DEEC01E39184C00F8FA49 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 929DEEC71E39184C00F8FA49;
-			remoteInfo = amfocused;
-		};
-		929DEEE31E39184C00F8FA49 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 929DEEC01E39184C00F8FA49 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 929DEEC71E39184C00F8FA49;
-			remoteInfo = amfocused;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		197ED77BBDCD7A6684F86E82 /* Pods_amfocusedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amfocusedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		257C2C061753798D0C2B472B /* Pods-amfocused.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amfocused.release.xcconfig"; path = "Pods/Target Support Files/Pods-amfocused/Pods-amfocused.release.xcconfig"; sourceTree = "<group>"; };
-		72B6ABA251C8AD9FC328AB1E /* Pods-amfocused.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amfocused.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amfocused/Pods-amfocused.debug.xcconfig"; sourceTree = "<group>"; };
-		7F4921D39D805AF2844D6E87 /* Pods-amfocusedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amfocusedUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amfocusedUITests/Pods-amfocusedUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		89AFEE80135A74081E587029 /* Pods_amfocusedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amfocusedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		92899F751E3FA61000E15E8D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		92899F761E3FA61000E15E8D /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
-		929DEEC81E39184C00F8FA49 /* amfocused.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amfocused.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		929DEECB1E39184C00F8FA49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		929DEECD1E39184C00F8FA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		929DEED01E39184C00F8FA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		929DEED21E39184C00F8FA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		929DEED71E39184C00F8FA49 /* amfocusedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = amfocusedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		929DEEDB1E39184C00F8FA49 /* amfocusedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amfocusedTests.swift; sourceTree = "<group>"; };
-		929DEEDD1E39184C00F8FA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		929DEEE21E39184C00F8FA49 /* amfocusedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = amfocusedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		929DEEE61E39184C00F8FA49 /* amfocusedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amfocusedUITests.swift; sourceTree = "<group>"; };
-		929DEEE81E39184C00F8FA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		929DEEF41E391AB300F8FA49 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		929DEEF51E391AB300F8FA49 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		929DEEF91E3A6DBF00F8FA49 /* Alarm clock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Alarm clock.wav"; sourceTree = "<group>"; };
-		929DEEFA1E3A6DBF00F8FA49 /* Bottles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bottles.wav; sourceTree = "<group>"; };
-		929DEEFB1E3A6DBF00F8FA49 /* clock-ticking-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "clock-ticking-2.wav"; sourceTree = "<group>"; };
-		A18EE9DDEB7987B5D5BD47FD /* Pods-amfocusedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amfocusedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amfocusedTests/Pods-amfocusedTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C3483F83E50C301ECE3A0573 /* Pods-amfocusedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amfocusedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-amfocusedTests/Pods-amfocusedTests.release.xcconfig"; sourceTree = "<group>"; };
-		F06725E0C638CD45C596DA07 /* Pods-amfocusedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amfocusedUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-amfocusedUITests/Pods-amfocusedUITests.release.xcconfig"; sourceTree = "<group>"; };
-		FD982052FE1418B12703725E /* Pods_amfocused.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amfocused.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		929DEEC51E39184C00F8FA49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				100ED6FA52691493C2DA674E /* Pods_amfocused.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		929DEED41E39184C00F8FA49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90E7944576870409D620E6F1 /* Pods_amfocusedTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		929DEEDF1E39184C00F8FA49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F6565C0E89BF8CB244D7CA73 /* Pods_amfocusedUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		7E21C01F5A6932312435ECB9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				72B6ABA251C8AD9FC328AB1E /* Pods-amfocused.debug.xcconfig */,
-				257C2C061753798D0C2B472B /* Pods-amfocused.release.xcconfig */,
-				A18EE9DDEB7987B5D5BD47FD /* Pods-amfocusedTests.debug.xcconfig */,
-				C3483F83E50C301ECE3A0573 /* Pods-amfocusedTests.release.xcconfig */,
-				7F4921D39D805AF2844D6E87 /* Pods-amfocusedUITests.debug.xcconfig */,
-				F06725E0C638CD45C596DA07 /* Pods-amfocusedUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		929DEEBF1E39184C00F8FA49 = {
-			isa = PBXGroup;
-			children = (
-				929DEECA1E39184C00F8FA49 /* amfocused */,
-				929DEEDA1E39184C00F8FA49 /* amfocusedTests */,
-				929DEEE51E39184C00F8FA49 /* amfocusedUITests */,
-				929DEEC91E39184C00F8FA49 /* Products */,
-				7E21C01F5A6932312435ECB9 /* Pods */,
-				DA16881E128BED055CB10D49 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		929DEEC91E39184C00F8FA49 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				929DEEC81E39184C00F8FA49 /* amfocused.app */,
-				929DEED71E39184C00F8FA49 /* amfocusedTests.xctest */,
-				929DEEE21E39184C00F8FA49 /* amfocusedUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		929DEECA1E39184C00F8FA49 /* amfocused */ = {
-			isa = PBXGroup;
-			children = (
-				929DEEF81E3A6DBF00F8FA49 /* Resources */,
-				929DEECB1E39184C00F8FA49 /* AppDelegate.swift */,
-				929DEECD1E39184C00F8FA49 /* Assets.xcassets */,
-				929DEECF1E39184C00F8FA49 /* MainMenu.xib */,
-				929DEED21E39184C00F8FA49 /* Info.plist */,
-				929DEEF41E391AB300F8FA49 /* MainViewController.swift */,
-				929DEEF51E391AB300F8FA49 /* MainViewController.xib */,
-				92899F751E3FA61000E15E8D /* SettingsViewController.swift */,
-				92899F761E3FA61000E15E8D /* SettingsViewController.xib */,
-			);
-			path = amfocused;
-			sourceTree = "<group>";
-		};
-		929DEEDA1E39184C00F8FA49 /* amfocusedTests */ = {
-			isa = PBXGroup;
-			children = (
-				929DEEDB1E39184C00F8FA49 /* amfocusedTests.swift */,
-				929DEEDD1E39184C00F8FA49 /* Info.plist */,
-			);
-			path = amfocusedTests;
-			sourceTree = "<group>";
-		};
-		929DEEE51E39184C00F8FA49 /* amfocusedUITests */ = {
-			isa = PBXGroup;
-			children = (
-				929DEEE61E39184C00F8FA49 /* amfocusedUITests.swift */,
-				929DEEE81E39184C00F8FA49 /* Info.plist */,
-			);
-			path = amfocusedUITests;
-			sourceTree = "<group>";
-		};
-		929DEEF81E3A6DBF00F8FA49 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				929DEEF91E3A6DBF00F8FA49 /* Alarm clock.wav */,
-				929DEEFA1E3A6DBF00F8FA49 /* Bottles.wav */,
-				929DEEFB1E3A6DBF00F8FA49 /* clock-ticking-2.wav */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		DA16881E128BED055CB10D49 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FD982052FE1418B12703725E /* Pods_amfocused.framework */,
-				197ED77BBDCD7A6684F86E82 /* Pods_amfocusedTests.framework */,
-				89AFEE80135A74081E587029 /* Pods_amfocusedUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		929DEEC71E39184C00F8FA49 /* amfocused */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 929DEEEB1E39184C00F8FA49 /* Build configuration list for PBXNativeTarget "amfocused" */;
-			buildPhases = (
-				2713B3A4CD7516D5B02324AD /* [CP] Check Pods Manifest.lock */,
-				929DEEC41E39184C00F8FA49 /* Sources */,
-				929DEEC51E39184C00F8FA49 /* Frameworks */,
-				929DEEC61E39184C00F8FA49 /* Resources */,
-				3A6BEED7487AC90081BA2436 /* [CP] Embed Pods Frameworks */,
-				89D3461A42AC03AF748D1A22 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = amfocused;
-			productName = amfocused;
-			productReference = 929DEEC81E39184C00F8FA49 /* amfocused.app */;
-			productType = "com.apple.product-type.application";
-		};
-		929DEED61E39184C00F8FA49 /* amfocusedTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 929DEEEE1E39184C00F8FA49 /* Build configuration list for PBXNativeTarget "amfocusedTests" */;
-			buildPhases = (
-				F0618B621549D64D8DED7838 /* [CP] Check Pods Manifest.lock */,
-				929DEED31E39184C00F8FA49 /* Sources */,
-				929DEED41E39184C00F8FA49 /* Frameworks */,
-				929DEED51E39184C00F8FA49 /* Resources */,
-				51102EEB2187DA549567D66A /* [CP] Embed Pods Frameworks */,
-				823EFABC6DF540E3E5AFEEA0 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				929DEED91E39184C00F8FA49 /* PBXTargetDependency */,
-			);
-			name = amfocusedTests;
-			productName = amfocusedTests;
-			productReference = 929DEED71E39184C00F8FA49 /* amfocusedTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		929DEEE11E39184C00F8FA49 /* amfocusedUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 929DEEF11E39184C00F8FA49 /* Build configuration list for PBXNativeTarget "amfocusedUITests" */;
-			buildPhases = (
-				D8CE450D596913ECC46D200A /* [CP] Check Pods Manifest.lock */,
-				929DEEDE1E39184C00F8FA49 /* Sources */,
-				929DEEDF1E39184C00F8FA49 /* Frameworks */,
-				929DEEE01E39184C00F8FA49 /* Resources */,
-				D64872BEE0DCCDB4F97E7A7D /* [CP] Embed Pods Frameworks */,
-				BFCF659D27A5259625FA7B29 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				929DEEE41E39184C00F8FA49 /* PBXTargetDependency */,
-			);
-			name = amfocusedUITests;
-			productName = amfocusedUITests;
-			productReference = 929DEEE21E39184C00F8FA49 /* amfocusedUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		929DEEC01E39184C00F8FA49 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Denis Nascimento";
-				TargetAttributes = {
-					929DEEC71E39184C00F8FA49 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = X434P4DGS5;
-						ProvisioningStyle = Automatic;
-					};
-					929DEED61E39184C00F8FA49 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = X434P4DGS5;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 929DEEC71E39184C00F8FA49;
-					};
-					929DEEE11E39184C00F8FA49 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = X434P4DGS5;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 929DEEC71E39184C00F8FA49;
-					};
-				};
-			};
-			buildConfigurationList = 929DEEC31E39184C00F8FA49 /* Build configuration list for PBXProject "amfocused" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 929DEEBF1E39184C00F8FA49;
-			productRefGroup = 929DEEC91E39184C00F8FA49 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				929DEEC71E39184C00F8FA49 /* amfocused */,
-				929DEED61E39184C00F8FA49 /* amfocusedTests */,
-				929DEEE11E39184C00F8FA49 /* amfocusedUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		929DEEC61E39184C00F8FA49 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				929DEEFC1E3A6DBF00F8FA49 /* Alarm clock.wav in Resources */,
-				929DEECE1E39184C00F8FA49 /* Assets.xcassets in Resources */,
-				929DEEFE1E3A6DBF00F8FA49 /* clock-ticking-2.wav in Resources */,
-				929DEEF71E391AB300F8FA49 /* MainViewController.xib in Resources */,
-				929DEED11E39184C00F8FA49 /* MainMenu.xib in Resources */,
-				92899F781E3FA61000E15E8D /* SettingsViewController.xib in Resources */,
-				929DEEFD1E3A6DBF00F8FA49 /* Bottles.wav in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		929DEED51E39184C00F8FA49 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		929DEEE01E39184C00F8FA49 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2713B3A4CD7516D5B02324AD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3A6BEED7487AC90081BA2436 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-amfocused/Pods-amfocused-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		51102EEB2187DA549567D66A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-amfocusedTests/Pods-amfocusedTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		823EFABC6DF540E3E5AFEEA0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-amfocusedTests/Pods-amfocusedTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		89D3461A42AC03AF748D1A22 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-amfocused/Pods-amfocused-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BFCF659D27A5259625FA7B29 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-amfocusedUITests/Pods-amfocusedUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D64872BEE0DCCDB4F97E7A7D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-amfocusedUITests/Pods-amfocusedUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D8CE450D596913ECC46D200A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F0618B621549D64D8DED7838 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		929DEEC41E39184C00F8FA49 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				929DEECC1E39184C00F8FA49 /* AppDelegate.swift in Sources */,
-				929DEEF61E391AB300F8FA49 /* MainViewController.swift in Sources */,
-				92899F771E3FA61000E15E8D /* SettingsViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		929DEED31E39184C00F8FA49 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				929DEEDC1E39184C00F8FA49 /* amfocusedTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		929DEEDE1E39184C00F8FA49 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				929DEEE71E39184C00F8FA49 /* amfocusedUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		929DEED91E39184C00F8FA49 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 929DEEC71E39184C00F8FA49 /* amfocused */;
-			targetProxy = 929DEED81E39184C00F8FA49 /* PBXContainerItemProxy */;
-		};
-		929DEEE41E39184C00F8FA49 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 929DEEC71E39184C00F8FA49 /* amfocused */;
-			targetProxy = 929DEEE31E39184C00F8FA49 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		929DEECF1E39184C00F8FA49 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				929DEED01E39184C00F8FA49 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		929DEEE91E39184C00F8FA49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		929DEEEA1E39184C00F8FA49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-			};
-			name = Release;
-		};
-		929DEEEC1E39184C00F8FA49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72B6ABA251C8AD9FC328AB1E /* Pods-amfocused.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = X434P4DGS5;
-				INFOPLIST_FILE = amfocused/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fdnascimento.amfocused;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		929DEEED1E39184C00F8FA49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 257C2C061753798D0C2B472B /* Pods-amfocused.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = X434P4DGS5;
-				INFOPLIST_FILE = amfocused/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fdnascimento.amfocused;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		929DEEEF1E39184C00F8FA49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A18EE9DDEB7987B5D5BD47FD /* Pods-amfocusedTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = X434P4DGS5;
-				INFOPLIST_FILE = amfocusedTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fdnascimento.amfocusedTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/amfocused.app/Contents/MacOS/amfocused";
-			};
-			name = Debug;
-		};
-		929DEEF01E39184C00F8FA49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3483F83E50C301ECE3A0573 /* Pods-amfocusedTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = X434P4DGS5;
-				INFOPLIST_FILE = amfocusedTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fdnascimento.amfocusedTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/amfocused.app/Contents/MacOS/amfocused";
-			};
-			name = Release;
-		};
-		929DEEF21E39184C00F8FA49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F4921D39D805AF2844D6E87 /* Pods-amfocusedUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = X434P4DGS5;
-				INFOPLIST_FILE = amfocusedUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fdnascimento.amfocusedUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = amfocused;
-			};
-			name = Debug;
-		};
-		929DEEF31E39184C00F8FA49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F06725E0C638CD45C596DA07 /* Pods-amfocusedUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = X434P4DGS5;
-				INFOPLIST_FILE = amfocusedUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fdnascimento.amfocusedUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = amfocused;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		929DEEC31E39184C00F8FA49 /* Build configuration list for PBXProject "amfocused" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				929DEEE91E39184C00F8FA49 /* Debug */,
-				929DEEEA1E39184C00F8FA49 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		929DEEEB1E39184C00F8FA49 /* Build configuration list for PBXNativeTarget "amfocused" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				929DEEEC1E39184C00F8FA49 /* Debug */,
-				929DEEED1E39184C00F8FA49 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		929DEEEE1E39184C00F8FA49 /* Build configuration list for PBXNativeTarget "amfocusedTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				929DEEEF1E39184C00F8FA49 /* Debug */,
-				929DEEF01E39184C00F8FA49 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		929DEEF11E39184C00F8FA49 /* Build configuration list for PBXNativeTarget "amfocusedUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				929DEEF21E39184C00F8FA49 /* Debug */,
-				929DEEF31E39184C00F8FA49 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 929DEEC01E39184C00F8FA49 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>100ED6FA52691493C2DA674E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FD982052FE1418B12703725E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>194177EA05D6CF6489A44E45</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-amfocusedTests/Pods-amfocusedTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>197ED77BBDCD7A6684F86E82</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_amfocusedTests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>257C2C061753798D0C2B472B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-amfocused.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-amfocused/Pods-amfocused.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2713B3A4CD7516D5B02324AD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [ $? != 0 ] ; then
+    # print error to STDERR
+    echo "error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation." &gt;&amp;2
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>3A6BEED7487AC90081BA2436</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-amfocused/Pods-amfocused-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>4DFC5EB411E881E8A1C9377F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-amfocused/Pods-amfocused-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>51102EEB2187DA549567D66A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-amfocusedTests/Pods-amfocusedTests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>57534B5B6F4B5B0C9E7C15C1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>6D200B03066532FEBCDEB4E7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-amfocusedUITests/Pods-amfocusedUITests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>72B6ABA251C8AD9FC328AB1E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-amfocused.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-amfocused/Pods-amfocused.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7E21C01F5A6932312435ECB9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>72B6ABA251C8AD9FC328AB1E</string>
+				<string>257C2C061753798D0C2B472B</string>
+				<string>A18EE9DDEB7987B5D5BD47FD</string>
+				<string>C3483F83E50C301ECE3A0573</string>
+				<string>7F4921D39D805AF2844D6E87</string>
+				<string>F06725E0C638CD45C596DA07</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F4921D39D805AF2844D6E87</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-amfocusedUITests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-amfocusedUITests/Pods-amfocusedUITests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>823EFABC6DF540E3E5AFEEA0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-amfocusedTests/Pods-amfocusedTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>89AFEE80135A74081E587029</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_amfocusedUITests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>89D3461A42AC03AF748D1A22</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-amfocused/Pods-amfocused-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>90E7944576870409D620E6F1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>197ED77BBDCD7A6684F86E82</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>92899F751E3FA61000E15E8D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>SettingsViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>92899F761E3FA61000E15E8D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>SettingsViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>92899F771E3FA61000E15E8D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>92899F751E3FA61000E15E8D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>92899F781E3FA61000E15E8D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>92899F761E3FA61000E15E8D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>929DEEBF1E39184C00F8FA49</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>929DEECA1E39184C00F8FA49</string>
+				<string>929DEEDA1E39184C00F8FA49</string>
+				<string>929DEEE51E39184C00F8FA49</string>
+				<string>929DEEC91E39184C00F8FA49</string>
+				<string>7E21C01F5A6932312435ECB9</string>
+				<string>DA16881E128BED055CB10D49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEEC01E39184C00F8FA49</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0820</string>
+				<key>LastUpgradeCheck</key>
+				<string>0820</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Denis Nascimento</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>929DEEC71E39184C00F8FA49</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.2.1</string>
+						<key>DevelopmentTeam</key>
+						<string>X434P4DGS5</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+					</dict>
+					<key>929DEED61E39184C00F8FA49</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.2.1</string>
+						<key>DevelopmentTeam</key>
+						<string>X434P4DGS5</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+						<key>TestTargetID</key>
+						<string>929DEEC71E39184C00F8FA49</string>
+					</dict>
+					<key>929DEEE11E39184C00F8FA49</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.2.1</string>
+						<key>DevelopmentTeam</key>
+						<string>X434P4DGS5</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+						<key>TestTargetID</key>
+						<string>929DEEC71E39184C00F8FA49</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>929DEEC31E39184C00F8FA49</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>929DEEBF1E39184C00F8FA49</string>
+			<key>productRefGroup</key>
+			<string>929DEEC91E39184C00F8FA49</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>929DEEC71E39184C00F8FA49</string>
+				<string>929DEED61E39184C00F8FA49</string>
+				<string>929DEEE11E39184C00F8FA49</string>
+			</array>
+		</dict>
+		<key>929DEEC31E39184C00F8FA49</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>929DEEE91E39184C00F8FA49</string>
+				<string>929DEEEA1E39184C00F8FA49</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>929DEEC41E39184C00F8FA49</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>929DEECC1E39184C00F8FA49</string>
+				<string>929DEEF61E391AB300F8FA49</string>
+				<string>92899F771E3FA61000E15E8D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>929DEEC51E39184C00F8FA49</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>100ED6FA52691493C2DA674E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>929DEEC61E39184C00F8FA49</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>929DEEFC1E3A6DBF00F8FA49</string>
+				<string>929DEECE1E39184C00F8FA49</string>
+				<string>929DEEFE1E3A6DBF00F8FA49</string>
+				<string>929DEEF71E391AB300F8FA49</string>
+				<string>929DEED11E39184C00F8FA49</string>
+				<string>92899F781E3FA61000E15E8D</string>
+				<string>929DEEFD1E3A6DBF00F8FA49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>929DEEC71E39184C00F8FA49</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>929DEEEB1E39184C00F8FA49</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B698246B263413AA818063C7</string>
+				<string>2713B3A4CD7516D5B02324AD</string>
+				<string>929DEEC41E39184C00F8FA49</string>
+				<string>929DEEC51E39184C00F8FA49</string>
+				<string>929DEEC61E39184C00F8FA49</string>
+				<string>3A6BEED7487AC90081BA2436</string>
+				<string>89D3461A42AC03AF748D1A22</string>
+				<string>4DFC5EB411E881E8A1C9377F</string>
+				<string>B00D3F9A257AF634144DA74E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>amfocused</string>
+			<key>productName</key>
+			<string>amfocused</string>
+			<key>productReference</key>
+			<string>929DEEC81E39184C00F8FA49</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>929DEEC81E39184C00F8FA49</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>amfocused.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>929DEEC91E39184C00F8FA49</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>929DEEC81E39184C00F8FA49</string>
+				<string>929DEED71E39184C00F8FA49</string>
+				<string>929DEEE21E39184C00F8FA49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEECA1E39184C00F8FA49</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>929DEEF81E3A6DBF00F8FA49</string>
+				<string>929DEECB1E39184C00F8FA49</string>
+				<string>929DEECD1E39184C00F8FA49</string>
+				<string>929DEECF1E39184C00F8FA49</string>
+				<string>929DEED21E39184C00F8FA49</string>
+				<string>929DEEF41E391AB300F8FA49</string>
+				<string>929DEEF51E391AB300F8FA49</string>
+				<string>92899F751E3FA61000E15E8D</string>
+				<string>92899F761E3FA61000E15E8D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>amfocused</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEECB1E39184C00F8FA49</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEECC1E39184C00F8FA49</key>
+		<dict>
+			<key>fileRef</key>
+			<string>929DEECB1E39184C00F8FA49</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>929DEECD1E39184C00F8FA49</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEECE1E39184C00F8FA49</key>
+		<dict>
+			<key>fileRef</key>
+			<string>929DEECD1E39184C00F8FA49</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>929DEECF1E39184C00F8FA49</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>929DEED01E39184C00F8FA49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainMenu.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEED01E39184C00F8FA49</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/MainMenu.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEED11E39184C00F8FA49</key>
+		<dict>
+			<key>fileRef</key>
+			<string>929DEECF1E39184C00F8FA49</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>929DEED21E39184C00F8FA49</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEED31E39184C00F8FA49</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>929DEEDC1E39184C00F8FA49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>929DEED41E39184C00F8FA49</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>90E7944576870409D620E6F1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>929DEED51E39184C00F8FA49</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>929DEED61E39184C00F8FA49</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>929DEEEE1E39184C00F8FA49</string>
+			<key>buildPhases</key>
+			<array>
+				<string>57534B5B6F4B5B0C9E7C15C1</string>
+				<string>F0618B621549D64D8DED7838</string>
+				<string>929DEED31E39184C00F8FA49</string>
+				<string>929DEED41E39184C00F8FA49</string>
+				<string>929DEED51E39184C00F8FA49</string>
+				<string>51102EEB2187DA549567D66A</string>
+				<string>823EFABC6DF540E3E5AFEEA0</string>
+				<string>CA6FE099E7F250AC2B754169</string>
+				<string>194177EA05D6CF6489A44E45</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>929DEED91E39184C00F8FA49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>amfocusedTests</string>
+			<key>productName</key>
+			<string>amfocusedTests</string>
+			<key>productReference</key>
+			<string>929DEED71E39184C00F8FA49</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>929DEED71E39184C00F8FA49</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>amfocusedTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>929DEED81E39184C00F8FA49</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>929DEEC01E39184C00F8FA49</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>929DEEC71E39184C00F8FA49</string>
+			<key>remoteInfo</key>
+			<string>amfocused</string>
+		</dict>
+		<key>929DEED91E39184C00F8FA49</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>929DEEC71E39184C00F8FA49</string>
+			<key>targetProxy</key>
+			<string>929DEED81E39184C00F8FA49</string>
+		</dict>
+		<key>929DEEDA1E39184C00F8FA49</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>929DEEDB1E39184C00F8FA49</string>
+				<string>929DEEDD1E39184C00F8FA49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>amfocusedTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEEDB1E39184C00F8FA49</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>amfocusedTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEEDC1E39184C00F8FA49</key>
+		<dict>
+			<key>fileRef</key>
+			<string>929DEEDB1E39184C00F8FA49</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>929DEEDD1E39184C00F8FA49</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEEDE1E39184C00F8FA49</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>929DEEE71E39184C00F8FA49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>929DEEDF1E39184C00F8FA49</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F6565C0E89BF8CB244D7CA73</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>929DEEE01E39184C00F8FA49</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>929DEEE11E39184C00F8FA49</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>929DEEF11E39184C00F8FA49</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D2866B7B636F4480946FA6E0</string>
+				<string>D8CE450D596913ECC46D200A</string>
+				<string>929DEEDE1E39184C00F8FA49</string>
+				<string>929DEEDF1E39184C00F8FA49</string>
+				<string>929DEEE01E39184C00F8FA49</string>
+				<string>D64872BEE0DCCDB4F97E7A7D</string>
+				<string>BFCF659D27A5259625FA7B29</string>
+				<string>6D200B03066532FEBCDEB4E7</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>929DEEE41E39184C00F8FA49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>amfocusedUITests</string>
+			<key>productName</key>
+			<string>amfocusedUITests</string>
+			<key>productReference</key>
+			<string>929DEEE21E39184C00F8FA49</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>929DEEE21E39184C00F8FA49</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>amfocusedUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>929DEEE31E39184C00F8FA49</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>929DEEC01E39184C00F8FA49</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>929DEEC71E39184C00F8FA49</string>
+			<key>remoteInfo</key>
+			<string>amfocused</string>
+		</dict>
+		<key>929DEEE41E39184C00F8FA49</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>929DEEC71E39184C00F8FA49</string>
+			<key>targetProxy</key>
+			<string>929DEEE31E39184C00F8FA49</string>
+		</dict>
+		<key>929DEEE51E39184C00F8FA49</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>929DEEE61E39184C00F8FA49</string>
+				<string>929DEEE81E39184C00F8FA49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>amfocusedUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEEE61E39184C00F8FA49</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>amfocusedUITests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEEE71E39184C00F8FA49</key>
+		<dict>
+			<key>fileRef</key>
+			<string>929DEEE61E39184C00F8FA49</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>929DEEE81E39184C00F8FA49</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEEE91E39184C00F8FA49</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.12</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
+				<string>DEBUG</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>929DEEEA1E39184C00F8FA49</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>-</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.12</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Owholemodule</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>929DEEEB1E39184C00F8FA49</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>929DEEEC1E39184C00F8FA49</string>
+				<string>929DEEED1E39184C00F8FA49</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>929DEEEC1E39184C00F8FA49</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>72B6ABA251C8AD9FC328AB1E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>X434P4DGS5</string>
+				<key>INFOPLIST_FILE</key>
+				<string>amfocused/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.fdnascimento.amfocused</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>929DEEED1E39184C00F8FA49</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>257C2C061753798D0C2B472B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>X434P4DGS5</string>
+				<key>INFOPLIST_FILE</key>
+				<string>amfocused/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.fdnascimento.amfocused</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>929DEEEE1E39184C00F8FA49</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>929DEEEF1E39184C00F8FA49</string>
+				<string>929DEEF01E39184C00F8FA49</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>929DEEEF1E39184C00F8FA49</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A18EE9DDEB7987B5D5BD47FD</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>X434P4DGS5</string>
+				<key>INFOPLIST_FILE</key>
+				<string>amfocusedTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.fdnascimento.amfocusedTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/amfocused.app/Contents/MacOS/amfocused</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>929DEEF01E39184C00F8FA49</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C3483F83E50C301ECE3A0573</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>X434P4DGS5</string>
+				<key>INFOPLIST_FILE</key>
+				<string>amfocusedTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.fdnascimento.amfocusedTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/amfocused.app/Contents/MacOS/amfocused</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>929DEEF11E39184C00F8FA49</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>929DEEF21E39184C00F8FA49</string>
+				<string>929DEEF31E39184C00F8FA49</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>929DEEF21E39184C00F8FA49</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7F4921D39D805AF2844D6E87</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>X434P4DGS5</string>
+				<key>INFOPLIST_FILE</key>
+				<string>amfocusedUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.fdnascimento.amfocusedUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>amfocused</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>929DEEF31E39184C00F8FA49</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F06725E0C638CD45C596DA07</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+				<string>YES</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>X434P4DGS5</string>
+				<key>INFOPLIST_FILE</key>
+				<string>amfocusedUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.fdnascimento.amfocusedUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>amfocused</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>929DEEF41E391AB300F8FA49</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>MainViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEEF51E391AB300F8FA49</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>MainViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEEF61E391AB300F8FA49</key>
+		<dict>
+			<key>fileRef</key>
+			<string>929DEEF41E391AB300F8FA49</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>929DEEF71E391AB300F8FA49</key>
+		<dict>
+			<key>fileRef</key>
+			<string>929DEEF51E391AB300F8FA49</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>929DEEF81E3A6DBF00F8FA49</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>929DEEF91E3A6DBF00F8FA49</string>
+				<string>929DEEFA1E3A6DBF00F8FA49</string>
+				<string>929DEEFB1E3A6DBF00F8FA49</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEEF91E3A6DBF00F8FA49</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.wav</string>
+			<key>path</key>
+			<string>Alarm clock.wav</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEEFA1E3A6DBF00F8FA49</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.wav</string>
+			<key>path</key>
+			<string>Bottles.wav</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEEFB1E3A6DBF00F8FA49</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.wav</string>
+			<key>path</key>
+			<string>clock-ticking-2.wav</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>929DEEFC1E3A6DBF00F8FA49</key>
+		<dict>
+			<key>fileRef</key>
+			<string>929DEEF91E3A6DBF00F8FA49</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>929DEEFD1E3A6DBF00F8FA49</key>
+		<dict>
+			<key>fileRef</key>
+			<string>929DEEFA1E3A6DBF00F8FA49</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>929DEEFE1E3A6DBF00F8FA49</key>
+		<dict>
+			<key>fileRef</key>
+			<string>929DEEFB1E3A6DBF00F8FA49</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A18EE9DDEB7987B5D5BD47FD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-amfocusedTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-amfocusedTests/Pods-amfocusedTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B00D3F9A257AF634144DA74E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-amfocused/Pods-amfocused-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B698246B263413AA818063C7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>BFCF659D27A5259625FA7B29</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-amfocusedUITests/Pods-amfocusedUITests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>C3483F83E50C301ECE3A0573</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-amfocusedTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-amfocusedTests/Pods-amfocusedTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CA6FE099E7F250AC2B754169</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-amfocusedTests/Pods-amfocusedTests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D2866B7B636F4480946FA6E0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>&#128230; Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D64872BEE0DCCDB4F97E7A7D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-amfocusedUITests/Pods-amfocusedUITests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D8CE450D596913ECC46D200A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [ $? != 0 ] ; then
+    # print error to STDERR
+    echo "error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation." &gt;&amp;2
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>DA16881E128BED055CB10D49</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FD982052FE1418B12703725E</string>
+				<string>197ED77BBDCD7A6684F86E82</string>
+				<string>89AFEE80135A74081E587029</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F0618B621549D64D8DED7838</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [ $? != 0 ] ; then
+    # print error to STDERR
+    echo "error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation." &gt;&amp;2
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>F06725E0C638CD45C596DA07</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-amfocusedUITests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-amfocusedUITests/Pods-amfocusedUITests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F6565C0E89BF8CB244D7CA73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>89AFEE80135A74081E587029</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FD982052FE1418B12703725E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_amfocused.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>929DEEC01E39184C00F8FA49</string>
+</dict>
+</plist>

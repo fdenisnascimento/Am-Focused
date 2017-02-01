@@ -44,7 +44,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         popover.contentViewController = MainViewController(nibName: "MainViewController", bundle: nil)
-        //NSStatusBar.system().changeColor(<#T##sender: Any?##Any?#>)
+        
         NSApp.activate(ignoringOtherApps: false)
         //[self.window setCollectionBehavior: NSWindowCollectionBehaviorCanJoinAllSpaces];
         
