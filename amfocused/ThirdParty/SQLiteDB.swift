@@ -21,7 +21,7 @@ private let SQLITE_TRANSIENT = unsafeBitCast(-1, to:sqlite3_destructor_type.self
 // MARK:- SQLiteDB Class - Does all the work
 @objc(SQLiteDB)
 class SQLiteDB:NSObject {
-	let DB_NAME = "data.db"
+	let DB_NAME = "amfocused"
 	let QUEUE_LABEL = "SQLiteDB"
 	static let sharedInstance = SQLiteDB()
 	private var db:OpaquePointer? = nil
@@ -36,6 +36,8 @@ class SQLiteDB:NSObject {
 //		let dbName = String(cString:DB_NAME)
 		// Get path to DB in Documents directory
 		var docDir = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0]
+        
+        
 		// If macOS, add app name to path since otherwise, DB could possibly interfere with another app using SQLiteDB
 #if os(OSX)
 		let info = Bundle.main.infoDictionary!
@@ -50,22 +52,23 @@ class SQLiteDB:NSObject {
 			}
 		}
 #endif
-		let path = (docDir as NSString).appendingPathComponent(DB_NAME)
-//		NSLog("Database path: \(path)")
+//		let path = (docDir as NSString).appendingPathComponent(DB_NAME)
+        let path = Bundle.main.path(forResource: DB_NAME, ofType:"sqlite")
+		NSLog("Database path: \(path)")
 		// Check if copy of DB is there in Documents directory
-		if !(fm.fileExists(atPath:path)) {
+		if !(fm.fileExists(atPath:path!)) {
 			// The database does not exist, so copy to Documents directory
 			guard let rp = Bundle.main.resourcePath else { return }
 			let from = (rp as NSString).appendingPathComponent(DB_NAME)
 			do {
-				try fm.copyItem(atPath:from, toPath:path)
+				try fm.copyItem(atPath:from, toPath:path!)
 			} catch let error as NSError {
 				NSLog("SQLiteDB - failed to copy writable version of DB!")
 				NSLog("Error - \(error.localizedDescription)")
 				return
 			}
 		}
-		openDB(path:path)
+		openDB(path:path!)
 	}
 	
 	private init(path:String) {

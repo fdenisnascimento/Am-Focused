@@ -12,7 +12,18 @@ class SettingsViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        self.view.layer?.backgroundColor = NSColor.white.cgColor
+        
+        setupView()
+    }
+    
+    
+    func setupView() -> Void {
+       
+        let setting = Setting.row(rowNumber: 1) as! Setting
+        
+        let url = setting.url_jira
+        print("jira:\(url)")
     }
     
 }

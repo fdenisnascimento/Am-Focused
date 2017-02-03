@@ -17,7 +17,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var boxView: NSBox!
     
-    let db = SQLiteDB.sharedInstance
     
     let statusItem = NSStatusBar.system().statusItem(withLength: -2)
     let popover = NSPopover()

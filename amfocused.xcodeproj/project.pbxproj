@@ -25,6 +25,8 @@
 		929DEEFC1E3A6DBF00F8FA49 /* Alarm clock.wav in Resources */ = {isa = PBXBuildFile; fileRef = 929DEEF91E3A6DBF00F8FA49 /* Alarm clock.wav */; };
 		929DEEFD1E3A6DBF00F8FA49 /* Bottles.wav in Resources */ = {isa = PBXBuildFile; fileRef = 929DEEFA1E3A6DBF00F8FA49 /* Bottles.wav */; };
 		929DEEFE1E3A6DBF00F8FA49 /* clock-ticking-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 929DEEFB1E3A6DBF00F8FA49 /* clock-ticking-2.wav */; };
+		92A85DCD1E448FAC00CCD78B /* amfocused.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 92A85DCC1E448FAC00CCD78B /* amfocused.sqlite */; };
+		92A85DD01E44969200CCD78B /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A85DCF1E44969200CCD78B /* Setting.swift */; };
 		F6565C0E89BF8CB244D7CA73 /* Pods_amfocusedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AFEE80135A74081E587029 /* Pods_amfocusedUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,8 @@
 		929DEEF91E3A6DBF00F8FA49 /* Alarm clock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Alarm clock.wav"; sourceTree = "<group>"; };
 		929DEEFA1E3A6DBF00F8FA49 /* Bottles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bottles.wav; sourceTree = "<group>"; };
 		929DEEFB1E3A6DBF00F8FA49 /* clock-ticking-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "clock-ticking-2.wav"; sourceTree = "<group>"; };
+		92A85DCC1E448FAC00CCD78B /* amfocused.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = amfocused.sqlite; sourceTree = "<group>"; };
+		92A85DCF1E44969200CCD78B /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		A18EE9DDEB7987B5D5BD47FD /* Pods-amfocusedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amfocusedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amfocusedTests/Pods-amfocusedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3483F83E50C301ECE3A0573 /* Pods-amfocusedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amfocusedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-amfocusedTests/Pods-amfocusedTests.release.xcconfig"; sourceTree = "<group>"; };
 		F06725E0C638CD45C596DA07 /* Pods-amfocusedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amfocusedUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-amfocusedUITests/Pods-amfocusedUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 		929DEECA1E39184C00F8FA49 /* amfocused */ = {
 			isa = PBXGroup;
 			children = (
+				92A85DCE1E44967300CCD78B /* Model */,
 				924569401E426DBA00AD50AC /* ThirdParty */,
 				929DEEF81E3A6DBF00F8FA49 /* Resources */,
 				929DEECB1E39184C00F8FA49 /* AppDelegate.swift */,
@@ -193,11 +198,20 @@
 		929DEEF81E3A6DBF00F8FA49 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				92A85DCC1E448FAC00CCD78B /* amfocused.sqlite */,
 				929DEEF91E3A6DBF00F8FA49 /* Alarm clock.wav */,
 				929DEEFA1E3A6DBF00F8FA49 /* Bottles.wav */,
 				929DEEFB1E3A6DBF00F8FA49 /* clock-ticking-2.wav */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		92A85DCE1E44967300CCD78B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92A85DCF1E44969200CCD78B /* Setting.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DA16881E128BED055CB10D49 /* Frameworks */ = {
@@ -345,6 +359,7 @@
 				929DEED11E39184C00F8FA49 /* MainMenu.xib in Resources */,
 				92899F781E3FA61000E15E8D /* SettingsViewController.xib in Resources */,
 				929DEEFD1E3A6DBF00F8FA49 /* Bottles.wav in Resources */,
+				92A85DCD1E448FAC00CCD78B /* amfocused.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +646,7 @@
 				924569471E426DBA00AD50AC /* String-Extras.swift in Sources */,
 				924569451E426DBA00AD50AC /* SQLiteDB.swift in Sources */,
 				929DEEF61E391AB300F8FA49 /* MainViewController.swift in Sources */,
+				92A85DD01E44969200CCD78B /* Setting.swift in Sources */,
 				92899F771E3FA61000E15E8D /* SettingsViewController.swift in Sources */,
 				924569461E426DBA00AD50AC /* SQLTable.swift in Sources */,
 			);
