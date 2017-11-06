@@ -18,7 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var boxView: NSBox!
     
     
-    let statusItem = NSStatusBar.system().statusItem(withLength: -2)
+    let statusItem = NSStatusBar.system.statusItem(withLength: -2)
     let popover = NSPopover()
     var timer = Timer()
     
@@ -39,21 +39,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         if let button = statusItem.button {
-            button.image = NSImage(named: "StatusBarButtonImage")
+            button.image = NSImage(named: NSImage.Name(rawValue: "StatusBarButtonImage"))
             button.action = #selector(togglePopover(sender:))
         }
         
-        popover.contentViewController = MainViewController(nibName: "MainViewController", bundle: nil)
+        popover.contentViewController = MainViewController(nibName: NSNib.Name(rawValue: "MainViewController"), bundle: nil)
         
         NSApp.activate(ignoringOtherApps: false)
         //[self.window setCollectionBehavior: NSWindowCollectionBehaviorCanJoinAllSpaces];
         
         
-        window.collectionBehavior = NSWindowCollectionBehavior.canJoinAllSpaces
-        window.level = Int(CGWindowLevelForKey(.maximumWindow))
+        window.collectionBehavior = NSWindow.CollectionBehavior.canJoinAllSpaces
+        window.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.maximumWindow)))
         
         
-        window.setFrame(NSMakeRect(0, (NSScreen.main()!.frame.height-60),NSScreen.main()!.frame.width, 60), display: true)
+        window.setFrame(NSMakeRect(0, (NSScreen.main!.frame.height-60),NSScreen.main!.frame.width, 60), display: true)
         window.ignoresMouseEvents = true
         window.setIsVisible(false)
         
@@ -82,7 +82,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.performClose(sender)
     }
     
-    func togglePopover(sender: AnyObject?) {
+    @objc func togglePopover(sender: AnyObject?) {
         print("togglePopover")
         if popover.isShown {
             closePopover(sender: sender)
@@ -106,7 +106,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
     }
     
-    func updateCounter() {
+    @objc func updateCounter() {
         
         if counter == counterDefault {
             stopTime()
@@ -132,7 +132,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.setIsVisible(false)
         setupView(green: true)
         labelClock.stringValue = "00:00:00"
-        //playSound()
+        playSound()
     }
     
     func setupView(green: Bool) -> Void {

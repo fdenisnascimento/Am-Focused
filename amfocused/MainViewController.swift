@@ -10,7 +10,7 @@ import Cocoa
 
 class MainViewController: NSViewController {
     
-    let appDelegate:AppDelegate = (NSApplication.shared().delegate as? AppDelegate)!
+    let appDelegate:AppDelegate = (NSApplication.shared.delegate as? AppDelegate)!
     var timer = Timer()
     let popover = NSPopover()
     
@@ -60,14 +60,14 @@ class MainViewController: NSViewController {
     
     
     
-    func updateCounter() -> Void {
+    @objc func updateCounter() -> Void {
         labelTime.stringValue = appDelegate.stringTime
     }
     
     @IBAction func goToSettings(_ sender: AnyObject) {
         
         appDelegate.closePopover(sender: sender)
-        if let vc:SettingsViewController = SettingsViewController(nibName: "SettingsViewController", bundle:nil) {
+        if let vc:SettingsViewController = SettingsViewController(nibName: NSNib.Name(rawValue: "SettingsViewController"), bundle:nil) {
             self.presentViewControllerAsModalWindow(vc)
         }
         

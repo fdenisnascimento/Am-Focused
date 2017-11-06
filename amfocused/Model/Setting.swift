@@ -13,7 +13,7 @@
 #endif
 
 
-class Setting: SQLTable {
+class Setting {
     
     var id = -1
     var work_interval = -1

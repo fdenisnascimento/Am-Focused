@@ -10,9 +10,6 @@
 		100ED6FA52691493C2DA674E /* Pods_amfocused.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD982052FE1418B12703725E /* Pods_amfocused.framework */; };
 		90E7944576870409D620E6F1 /* Pods_amfocusedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197ED77BBDCD7A6684F86E82 /* Pods_amfocusedTests.framework */; };
 		9245693F1E426D9D00AD50AC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9245693E1E426D9D00AD50AC /* libsqlite3.0.tbd */; };
-		924569451E426DBA00AD50AC /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924569421E426DBA00AD50AC /* SQLiteDB.swift */; };
-		924569461E426DBA00AD50AC /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924569431E426DBA00AD50AC /* SQLTable.swift */; };
-		924569471E426DBA00AD50AC /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924569441E426DBA00AD50AC /* String-Extras.swift */; };
 		92899F771E3FA61000E15E8D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92899F751E3FA61000E15E8D /* SettingsViewController.swift */; };
 		92899F781E3FA61000E15E8D /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92899F761E3FA61000E15E8D /* SettingsViewController.xib */; };
 		929DEECC1E39184C00F8FA49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929DEECB1E39184C00F8FA49 /* AppDelegate.swift */; };
@@ -54,10 +51,6 @@
 		7F4921D39D805AF2844D6E87 /* Pods-amfocusedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-amfocusedUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-amfocusedUITests/Pods-amfocusedUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		89AFEE80135A74081E587029 /* Pods_amfocusedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_amfocusedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9245693E1E426D9D00AD50AC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		924569411E426DBA00AD50AC /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		924569421E426DBA00AD50AC /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
-		924569431E426DBA00AD50AC /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
-		924569441E426DBA00AD50AC /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
 		92899F751E3FA61000E15E8D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		92899F761E3FA61000E15E8D /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		929DEEC81E39184C00F8FA49 /* amfocused.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = amfocused.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,17 +119,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		924569401E426DBA00AD50AC /* ThirdParty */ = {
-			isa = PBXGroup;
-			children = (
-				924569411E426DBA00AD50AC /* Bridging-Header.h */,
-				924569421E426DBA00AD50AC /* SQLiteDB.swift */,
-				924569431E426DBA00AD50AC /* SQLTable.swift */,
-				924569441E426DBA00AD50AC /* String-Extras.swift */,
-			);
-			path = ThirdParty;
-			sourceTree = "<group>";
-		};
 		929DEEBF1E39184C00F8FA49 = {
 			isa = PBXGroup;
 			children = (
@@ -163,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				92A85DCE1E44967300CCD78B /* Model */,
-				924569401E426DBA00AD50AC /* ThirdParty */,
 				929DEEF81E3A6DBF00F8FA49 /* Resources */,
 				929DEECB1E39184C00F8FA49 /* AppDelegate.swift */,
 				929DEECD1E39184C00F8FA49 /* Assets.xcassets */,
@@ -305,23 +286,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Denis Nascimento";
 				TargetAttributes = {
 					929DEEC71E39184C00F8FA49 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = X434P4DGS5;
+						DevelopmentTeam = 4VCXQ8P3R3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					929DEED61E39184C00F8FA49 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X434P4DGS5;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 929DEEC71E39184C00F8FA49;
 					};
 					929DEEE11E39184C00F8FA49 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X434P4DGS5;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 929DEEC71E39184C00F8FA49;
 					};
@@ -643,12 +627,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				929DEECC1E39184C00F8FA49 /* AppDelegate.swift in Sources */,
-				924569471E426DBA00AD50AC /* String-Extras.swift in Sources */,
-				924569451E426DBA00AD50AC /* SQLiteDB.swift in Sources */,
 				929DEEF61E391AB300F8FA49 /* MainViewController.swift in Sources */,
 				92A85DD01E44969200CCD78B /* Setting.swift in Sources */,
 				92899F771E3FA61000E15E8D /* SettingsViewController.swift in Sources */,
-				924569461E426DBA00AD50AC /* SQLTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,7 +685,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -712,7 +695,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -735,7 +722,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -753,7 +740,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -761,7 +750,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -778,7 +771,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -791,13 +784,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = X434P4DGS5;
+				DEVELOPMENT_TEAM = 4VCXQ8P3R3;
 				INFOPLIST_FILE = amfocused/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdnascimento.amfocused;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "amfocused/ThirdParty/Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -807,13 +801,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = X434P4DGS5;
+				DEVELOPMENT_TEAM = 4VCXQ8P3R3;
 				INFOPLIST_FILE = amfocused/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdnascimento.amfocused;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "amfocused/ThirdParty/Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -829,7 +824,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdnascimento.amfocusedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/amfocused.app/Contents/MacOS/amfocused";
 			};
 			name = Debug;
@@ -846,7 +842,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdnascimento.amfocusedTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/amfocused.app/Contents/MacOS/amfocused";
 			};
 			name = Release;
@@ -862,7 +859,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdnascimento.amfocusedUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = amfocused;
 			};
 			name = Debug;
@@ -878,7 +876,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fdnascimento.amfocusedUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = amfocused;
 			};
 			name = Release;

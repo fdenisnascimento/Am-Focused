@@ -19,11 +19,11 @@ class SettingsViewController: NSViewController {
     
     
     func setupView() -> Void {
-       
-        let setting = Setting.row(rowNumber: 1) as! Setting
-        
-        let url = setting.url_jira
-        print("jira:\(url)")
+//
+//        let setting = Setting.row(rowNumber: 1) as! Setting
+//
+//        let url = setting.url_jira
+//        print("jira:\(url)")
     }
     
 }
