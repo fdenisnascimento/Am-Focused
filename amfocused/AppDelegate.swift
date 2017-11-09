@@ -29,6 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var minutesDefault = 25*60
     var counterDefault = 25*60
     var counter = 0
+    var enabledSound = false
     var stringTime = String()
     
     
@@ -148,7 +149,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func playSound() {
 
-        
         if ( player != nil && (player?.isPlaying)!) {
             player?.pause()
         } else{
@@ -156,7 +156,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 player = try AVAudioPlayer(contentsOf: urlClockTicking)
                 player?.numberOfLoops = -1
                 player?.prepareToPlay()
-                player?.play()
+                if enabledSound {
+                    player?.play()
+                }
             } catch let error as NSError {
                 print(error.description)
             }

@@ -18,7 +18,12 @@ class MainViewController: NSViewController {
     @IBOutlet weak var btnStop: NSButton!
     @IBOutlet weak var labelTime: NSTextField!
     
+    @IBOutlet weak var btnSound: NSButton!
     
+    @IBAction func setSoundEnable(_ sender: NSButton) {
+        appDelegate.enabledSound = btnSound.isEnabled
+        appDelegate.playSound()
+    }
     
     override func viewDidAppear() {
         super.viewDidAppear()
