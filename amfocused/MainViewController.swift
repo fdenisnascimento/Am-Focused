@@ -50,7 +50,12 @@ class MainViewController: NSViewController {
     }
     
     @IBAction func btnStart(_ sender: Any) {
-        
+        appDelegate.counterDefault = 25*60
+        appDelegate.startClock()
+    }
+    
+    @IBAction func btnStartInterval(_ sender: Any) {
+        appDelegate.counterDefault = 5*60
         appDelegate.startClock()
     }
     
