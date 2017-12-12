@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -11,6 +11,7 @@
                 <outlet property="btnStart" destination="tJE-uP-1Ta" id="nSt-fT-KlH"/>
                 <outlet property="btnStop" destination="sUE-H8-yCy" id="iee-SE-tJZ"/>
                 <outlet property="labelTime" destination="BY6-Iv-BGa" id="zS9-f0-PQW"/>
+                <outlet property="textTimeInterval" destination="mzZ-RZ-kVr" id="xSP-zh-AEv"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -120,6 +121,16 @@
                         <action selector="setSoundEnable:" target="-2" id="HH5-u5-KeR"/>
                     </connections>
                 </button>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzZ-RZ-kVr">
+                    <rect key="frame" x="30" y="58" width="249" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="25" drawsBackground="YES" id="1FM-bL-QlE">
+                        <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="pYs-SU-fTL"/>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Uht-ZC-L1Z" secondAttribute="bottom" constant="20" id="0IX-Az-I07"/>
@@ -146,7 +157,7 @@
                 <constraint firstAttribute="trailing" secondItem="Uht-ZC-L1Z" secondAttribute="trailing" constant="10" id="uwW-yB-yHk"/>
                 <constraint firstItem="59R-gR-aIW" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="30" id="xsq-8e-2b9"/>
             </constraints>
-            <point key="canvasLocation" x="7" y="56"/>
+            <point key="canvasLocation" x="6.5" y="55.5"/>
         </customView>
     </objects>
     <resources>

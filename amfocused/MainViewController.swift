@@ -14,15 +14,23 @@ class MainViewController: NSViewController {
     var timer = Timer()
     let popover = NSPopover()
     
+    
+    @IBOutlet weak var textTimeInterval: NSTextField!
     @IBOutlet weak var btnStart: NSButton!
     @IBOutlet weak var btnStop: NSButton!
     @IBOutlet weak var labelTime: NSTextField!
     
     @IBOutlet weak var btnSound: NSButton!
     
+    
+    
     @IBAction func setSoundEnable(_ sender: NSButton) {
         appDelegate.enabledSound = btnSound.isEnabled
         appDelegate.playSound()
+    }
+    
+    func getTimeInterval() -> Int {
+        return Int(self.textTimeInterval.stringValue)!
     }
     
     override func viewDidAppear() {
@@ -55,7 +63,7 @@ class MainViewController: NSViewController {
     }
     
     @IBAction func btnStart(_ sender: Any) {
-        appDelegate.counterDefault = 25*60
+        appDelegate.counterDefault = getTimeInterval()*60
         appDelegate.startClock()
     }
     
