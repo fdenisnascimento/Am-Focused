@@ -92,8 +92,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
+    func startInterval(){
+        startClock(green: true)
+    }
     
-    func startClock() -> Void {
+    func startPomodore() {
+        startClock(green: false)
+    }
+    
+    func startClock(green: Bool) {
         
         if timer.isValid {
             timer.invalidate()
@@ -101,10 +108,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             timer  = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
             togglePopover(sender: nil)
             window.setIsVisible(true)
-            setupView(green: false)
+            setupView(green: green)
         }
-       // playSound()
-        
     }
     
     @objc func updateCounter() {
@@ -139,7 +144,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func setupView(green: Bool) -> Void {
         
         if green {
-            window.backgroundColor = NSColor.green
+            window.backgroundColor = NSColor.init(calibratedRed: 0.385, green: 0.637, blue: 0.341, alpha: 1.00)
         }else{
             window.backgroundColor = NSColor.red
         }

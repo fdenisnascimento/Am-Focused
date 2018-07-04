@@ -64,12 +64,12 @@ class MainViewController: NSViewController {
     
     @IBAction func btnStart(_ sender: Any) {
         appDelegate.counterDefault = getTimeInterval()*60
-        appDelegate.startClock()
+        appDelegate.startPomodore()
     }
     
     @IBAction func btnStartInterval(_ sender: Any) {
         appDelegate.counterDefault = 5*60
-        appDelegate.startClock()
+        appDelegate.startInterval()
     }
     
     @IBAction func btnStop(_ sender: Any) {
@@ -83,12 +83,8 @@ class MainViewController: NSViewController {
     }
     
     @IBAction func goToSettings(_ sender: AnyObject) {
-        
         appDelegate.closePopover(sender: sender)
-        if let vc:SettingsViewController = SettingsViewController(nibName: NSNib.Name(rawValue: "SettingsViewController"), bundle:nil) {
-            self.presentViewControllerAsModalWindow(vc)
-        }
-        
+            self.presentViewControllerAsModalWindow(SettingsViewController())
     }
     
     
